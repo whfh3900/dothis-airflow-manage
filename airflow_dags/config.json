@@ -1,0 +1,84 @@
+{
+    "related_finetune":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@daily",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "연관어 모델 파인튜닝을 하기위한 dag입니다."
+        },
+    "keyword":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@monthly",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "키워드를 업데이트 하기위한 dag입니다."
+        },
+    "weekly_keywords":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "0 0 * * 1",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "주간키워드를 업데이트 하기위한 dag입니다."
+        },
+    "pre_to_redis":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@daily",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "redis에 비디오 데이터를 넣기위한 dag입니다."
+        },
+    "channel_cluster":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@monthly",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "채널 클러스터를 업데이트 하기위한 dag입니다."
+        },
+    "data_remove":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@monthly",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "오래된 데이터를 삭제하기 위한 dag입니다."
+        },
+    "remove_to_redis":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@monthly",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "오래된 토큰테이블의 데이터를 삭제하는 dag입니다."
+        },
+    "related_data_collect":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "@daily",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "삭제예정 dag"
+        },
+    "update_db":{
+        "owner": "최승언",
+        "depends_on_past": false,
+        "schedule_interval": "0 6 * * 1",
+        "retries": 3,
+        "retry_delay": 300,
+        "catchup": false,
+        "description": "삭제예정 dag"
+        }
+
+}

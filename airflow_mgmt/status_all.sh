@@ -1,0 +1,6 @@
+ssh air1 'service airflow-flower.service     status'
+ssh air1 'service airflow-trigger.service    status'
+ssh air1 'service airflow-webserver.service  status'
+ssh air2 'service airflow-worker.service status'
+ssh air3 'service airflow-worker.service status'
+ssh air4 'service airflow-worker.service status'

@@ -1,0 +1,12 @@
+/__pycache__
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv
+.env
+/cache
+/model
+airflow_dags/.gitignore
+airflow_dags/ai/models
+airflow_files/airflow.cfg

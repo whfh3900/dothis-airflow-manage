@@ -1,0 +1,12 @@
+python-dotenv
+pandas
+boto3
+pyignite
+tqdm
+scikit-learn
+sentence_transformers
+gensim
+transformers
+pymysql
+google-api-python-client
+konlpy
